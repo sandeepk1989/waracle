@@ -10,6 +10,7 @@
 	</parent>
 	<groupId>com.waracle.cakemgr</groupId>
 	<artifactId>cake-manager-api</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>cake-manager-api</name>
 	<packaging>jar</packaging>
 	<description>Cake Manager REST API</description>
@@ -53,4 +54,13 @@
 		</dependency>
 
 	</dependencies>
+	
+	<build>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+    </plugins>
+</build>
 </project>
