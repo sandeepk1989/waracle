@@ -1,0 +1,28 @@
+server:
+    port: 8082
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  datasource:
+    url: jdbc:h2:file:./data/demo
+    username: cakemgr
+    password: cakemgr
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    defer-datasource-initialization: true
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: daab75f7a629af1babfb
+            clientSecret: 41b80ab039cb96b1b4b9c0edb99080c8a41cd3fa 
+cake-manager:
+  data-url: https://gist.githubusercontent.com/hart88/198f29ec5114a3ec3460/raw/8dd19a88f9b8d24c23d9960f3300d0c917a4f07c/cake.json
