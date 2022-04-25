@@ -48,3 +48,14 @@ Content-Type: application/json
 "image" : "https://chelsweets.com/wp-content/uploads/2019/04/IMG_1029-2-735x1103.jpg",
 }
 RESPONSE: HTTP 201 (Created)
+
+### Docker Container
+Simple Dockerfile is created to deploy the application to the Docker container. If you have the Docker installed and running you can use the following command to build the docker image:
+```
+docker build -t cake-manager-api .
+```
+
+To run the application on Docker container use the following command:
+```
+docker run -p 8082:8082 springio/gs-spring-boot-docker
+```
