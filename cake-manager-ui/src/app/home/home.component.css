@@ -1,0 +1,16 @@
+.mat-column-title{
+    width: 20%;
+}
+
+.mat-column-desc {
+    width: 50%
+}
+
+.mat-column-image{
+    width: 30%;
+}
+
+.cake-image{
+    width: 100px;
+    height: 100px;
+}
