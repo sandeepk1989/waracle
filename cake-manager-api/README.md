@@ -23,20 +23,20 @@ Once the application runs you should see something like this
 The service is just a simple cake manager REST service. It uses an file database (H2) to store the data. Database is initialsed with the default data using the file present at ```src\main\resources\test-data.json```
 
 
-#### API Endpoints
+### API Endpoints
 Here are some endpoints you can call:
 
-##### Get all the cakes.
+#### 1. Get all the cakes.
 ```
 http://localhost:8082/
 ```
 
-##### Get all the cakes in JSON File
+#### 2. Get all the cakes in JSON File
 ```
 http://localhost:8082/cakes
 ```
 
-##### Create new Cake
+#### 3. Create new Cake
 ```
 http://localhost:8082/cakes
 Request Type: POST 
@@ -48,13 +48,13 @@ Content-Type: application/json
 "image" : "https://chelsweets.com/wp-content/uploads/2019/04/IMG_1029-2-735x1103.jpg",
 }
 RESPONSE: HTTP 201 (Created)
+```
 
 ### Docker Container
 Simple Dockerfile is created to deploy the application to the Docker container. If you have the Docker installed and running you can use the following command to build the docker image:
 ```
 docker build -t cake-manager-api .
 ```
-
 To run the application on Docker container use the following command:
 ```
 docker run -p 8082:8082 springio/gs-spring-boot-docker
