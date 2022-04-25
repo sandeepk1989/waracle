@@ -1,5 +1,4 @@
-# Waracle
-Waracle Test Submission
+# Waracle Test
 This repository contains:
 
 ## REST API Backend Service
